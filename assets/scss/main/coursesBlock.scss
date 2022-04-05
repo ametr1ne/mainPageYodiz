@@ -1,0 +1,83 @@
+.coursesBlock {
+  width: 100%;
+  padding-top: 167px;
+  padding-bottom: 111px;
+
+  h1 {
+    max-width: 600px;
+    margin-bottom: 28px;
+    font-size: 80px;
+    line-height: 107%;
+    letter-spacing: -0.04em;
+  }
+
+  p {
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+  }
+
+  &__cards-container {
+    margin-top: 3.75rem;
+  }
+
+  &__card {
+    position: relative;
+    border: 1px solid #D7D7E7;
+    padding: 30px 25px;
+    width: 50%;
+
+    h2 {
+      padding-right: 180px;
+      margin-bottom: 32px;
+    }
+
+    .card__teachers {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      img {
+        position: relative;
+
+        &:first-child {
+          z-index: 3;
+        }
+        &:nth-child(2) {
+          z-index: 2;
+        }
+        &:nth-child(3) {
+          z-index: 1;
+        }
+        &:not(:last-child) {
+          margin-right: -18px;
+        }
+      }
+    }
+
+    .card__content {
+      padding: 0 13px;
+    }
+
+    .card__info {
+      display: flex;
+      flex-direction: column;
+      grid-row-gap: 36px;
+    }
+
+    .details-btn {
+      margin-top: 3.125rem;
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  @media (max-width: 1260px) {
+    &__cards-container {
+      flex-direction: column;
+      grid-row-gap: 30px;
+    }
+  }
+}

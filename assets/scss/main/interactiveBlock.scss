@@ -1,0 +1,53 @@
+.interactiveBlock {
+  margin-top: 130px;
+  margin-bottom: 111px;
+
+  .interactive-item {
+    width: 50%;
+    padding: 0 24px 30px;
+    position: relative;
+
+    .item-category {
+      position: absolute;
+      margin-top: 24px;
+      margin-left: 14px;
+      font-size: 19px;
+    }
+
+    .img-container {
+      margin: 0 auto;
+      height: 453px;
+      width: 500px;
+      display: flex;
+      align-items: center;
+
+      img {
+        display: block;
+        margin: auto;
+      }
+    }
+
+    .interactive-btn {
+      width: 100%;
+      display: flex;
+      margin-top: 30px;
+      justify-content: space-between;
+    }
+  }
+
+  h3 {
+    margin-left: 14px;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    max-width: 415px;
+  }
+
+  .book-card {
+    background: #D8D7D4;
+  }
+
+  .test-card {
+    border: 1px solid #D7D7E7;
+  }
+}

@@ -1,0 +1,32 @@
+.feedbacksBlock {
+  margin-top: 101px;
+
+  &__top {
+    display: flex;
+    margin-top: 34px;
+    align-items: flex-start;
+
+    .vk-block {
+      margin-left: 40px;
+      display: flex;
+      align-items: center;
+      margin-top: -15px;
+
+      .vk-btn {
+        background: black;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        min-width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      p {
+        font-size: 19px;
+        margin-left: 18px;
+      }
+    }
+  }
+}

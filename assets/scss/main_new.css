@@ -443,17 +443,6 @@ a.header__logo:hover svg {
   margin-right: 0;
   background: #000;
 }
-@media (min-width: 1051px) {
-  .header__link[href="https://yodiz.ru"] {
-    margin-right: 0;
-    padding: 13px 30px 14px 30px;
-    background: #f8f8f8;
-    border-radius: 27px;
-  }
-  .black .header__link[href="https://yodiz.ru"] {
-    background: rgba(248, 248, 248, 0.05);
-  }
-}
 
 .header__right {
   display: block;
@@ -1887,129 +1876,182 @@ h2 {
     }
   }
 }
-.block13 {
-  display: block;
+.coursesBlock {
   width: 100%;
-  padding-top: 173px;
-  padding-bottom: 49px;
-  position: relative;
+  padding-top: 167px;
+  padding-bottom: 111px;
 }
-.block13 h1 {
-  color: #000000;
+.coursesBlock h1 {
   max-width: 600px;
+  margin-bottom: 28px;
+  font-size: 80px;
+  line-height: 107%;
+  letter-spacing: -0.04em;
 }
-.block13__wrap {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-align-items: flex-start;
-  width: 100%;
-}
-.block13__left {
-  display: block;
-  width: 69%;
-}
-.block13__heading {
-  display: block;
+.coursesBlock p {
   font-size: 30px;
-  line-height: 40px;
-  letter-spacing: -0.03em;
-  color: #000000;
-  margin-top: 28px;
-  padding-right: 10px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
 }
-.block13__right {
-  display: block;
-  width: 31%;
-  padding-left: 10px;
+.coursesBlock__cards-container {
+  margin-top: 3.75rem;
+}
+.coursesBlock__card {
+  position: relative;
+  border: 1px solid #D7D7E7;
+  padding: 30px 25px;
+  width: 50%;
+}
+.coursesBlock__card h2 {
+  padding-right: 180px;
+  margin-bottom: 32px;
+}
+.coursesBlock__card .card__teachers {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.coursesBlock__card .card__teachers img {
   position: relative;
 }
-.block13__pic {
-  display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: url("../img/i2.jpg") no-repeat center;
-  background-size: contain;
+.coursesBlock__card .card__teachers img:first-child {
+  z-index: 3;
 }
-.block13__txt {
-  display: block;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  left: 128px;
-  color: #000000;
-  width: 175px;
+.coursesBlock__card .card__teachers img:nth-child(2) {
+  z-index: 2;
 }
-.block13__txt p:first-child {
-  font-family: "Proxima Nova Sb", sans-serif;
-  font-weight: 600;
+.coursesBlock__card .card__teachers img:nth-child(3) {
+  z-index: 1;
+}
+.coursesBlock__card .card__teachers img:not(:last-child) {
+  margin-right: -18px;
+}
+.coursesBlock__card .card__content {
+  padding: 0 13px;
+}
+.coursesBlock__card .card__info {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 36px;
+}
+.coursesBlock__card .details-btn {
+  margin-top: 3.125rem;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1260px) {
+  .coursesBlock__cards-container {
+    flex-direction: column;
+    grid-row-gap: 30px;
+  }
 }
 
-@media (max-width: 1830px) {
-  .block13 .info {
-    left: -150px;
-  }
+.factsBlock img {
+  margin: 50px 0;
+  width: 100%;
 }
-@media (max-width: 1440px) {
-  .block13 {
-    padding-top: 129px;
-    padding-bottom: 37px;
-  }
-  .block13 h1 {
-    max-width: 560px;
-  }
-  .block13__wrap {
-    margin-top: -10px;
-  }
-  .block13__heading {
-    font-size: 25px;
-    line-height: 35px;
-    padding-right: 20px;
-    margin-top: 30px;
-  }
-  .block13__right {
-    padding-left: 0;
-  }
-  .block13__txt {
-    left: 110px;
-    width: 130px;
-  }
+.factsBlock__item:not(:last-child) {
+  margin-bottom: 35px;
 }
-@media (max-width: 1050px) {
-  .block13 .info {
-    display: none;
-  }
+.factsBlock__subtitle {
+  margin-bottom: 15px;
 }
-@media (max-width: 767px) {
-  .block13 {
-    padding-top: 114px;
-  }
-  .block13__right {
-    display: none;
-  }
-  .block13__pic {
-    display: none;
-  }
-  .block13__left {
-    width: 100%;
-  }
-  .block13__heading {
-    margin-top: 31px;
-    padding-right: 0;
-  }
+
+.interactiveBlock {
+  margin-top: 130px;
+  margin-bottom: 111px;
 }
+.interactiveBlock .interactive-item {
+  width: 50%;
+  padding: 0 24px 30px;
+  position: relative;
+}
+.interactiveBlock .interactive-item .item-category {
+  position: absolute;
+  margin-top: 24px;
+  margin-left: 14px;
+  font-size: 19px;
+}
+.interactiveBlock .interactive-item .img-container {
+  margin: 0 auto;
+  height: 453px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+}
+.interactiveBlock .interactive-item .img-container img {
+  display: block;
+  margin: auto;
+}
+.interactiveBlock .interactive-item .interactive-btn {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.interactiveBlock h3 {
+  margin-left: 14px;
+  font-size: 30px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  max-width: 415px;
+}
+.interactiveBlock .book-card {
+  background: #D8D7D4;
+}
+.interactiveBlock .test-card {
+  border: 1px solid #D7D7E7;
+}
+
+.collaborationBlock {
+  margin-bottom: 134px;
+}
+.collaborationBlock .companies {
+  display: flex;
+  grid-column-gap: 30px;
+  width: 100%;
+  margin: 47px 0;
+}
+.collaborationBlock .companies__item {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #D7D7E7;
+  height: 170px;
+}
+
+.feedbacksBlock {
+  margin-top: 101px;
+}
+.feedbacksBlock__top {
+  display: flex;
+  margin-top: 34px;
+  align-items: flex-start;
+}
+.feedbacksBlock__top .vk-block {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: -15px;
+}
+.feedbacksBlock__top .vk-block .vk-btn {
+  background: black;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feedbacksBlock__top .vk-block p {
+  font-size: 19px;
+  margin-left: 18px;
+}
+
 .block14, .block15 {
   display: block;
   width: 100%;
@@ -2299,6 +2341,55 @@ h2 {
   .block16 h2 {
     margin-bottom: 26px;
   }
+}
+.thin-container {
+  width: 100%;
+  max-width: 870px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.hide-container {
+  width: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.btn {
+  height: 70px;
+  border-radius: 100px;
+  transition: background 0.4s;
+  font-size: 19px;
+  line-height: 140%;
+  padding: 0 40px;
+}
+.btn svg path {
+  fill: white;
+}
+
+.cards-container {
+  display: flex;
+  grid-column-gap: 30px;
+}
+
+p {
+  font-size: 30px;
+  line-height: 130%;
+}
+
+.text-grey {
+  color: #9090A9;
+}
+
+.black-btn {
+  background: #000000;
+  color: white;
+}
+.black-btn:hover {
+  background: #ff0000;
 }
 
 /*# sourceMappingURL=main_new.css.map */

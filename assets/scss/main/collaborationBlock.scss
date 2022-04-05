@@ -1,0 +1,18 @@
+.collaborationBlock {
+  margin-bottom: 134px;
+  .companies {
+    display: flex;
+    grid-column-gap: 30px;
+    width: 100%;
+    margin: 47px 0;
+
+    &__item {
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #D7D7E7;
+      height: 170px;
+    }
+  }
+}

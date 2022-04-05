@@ -1,7 +1,65 @@
 @import 'font-face';
-@import 'layout';
+@import 'layout_new';
 
-@import 'main/block13';
+@import "main/coursesBlock";
+@import "main/factsBlock";
+@import "main/interactiveBlock";
+@import "main/collaborationBlock";
+@import "main/feedbacksBlock";
+//@import 'main/block13';
 @import 'main/block14';
-@import 'main/block15';
 @import 'main/block16';
+
+.thin-container {
+  width: 100%;
+  max-width: 870px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.hide-container {
+  width: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.btn {
+  height: 70px;
+  border-radius: 100px;
+  transition: background 0.4s;
+  font-size: 19px;
+  line-height: 140%;
+  padding: 0 40px;
+
+  svg {
+    path {
+      fill: white;
+    }
+  }
+}
+
+.cards-container {
+  display: flex;
+  grid-column-gap: 30px;
+}
+
+p {
+  font-size: 30px;
+  line-height: 130%;
+}
+
+.text-grey {
+  color: #9090A9;
+}
+
+.black-btn {
+  background: #000000;
+  color: white;
+
+  &:hover {
+    background: #ff0000;
+  }
+}
