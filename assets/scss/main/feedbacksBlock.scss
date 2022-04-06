@@ -22,24 +22,29 @@
         justify-content: center;
         align-items: center;
 
-        //svg {
-        //  g {
-        //    path {
-        //      transition: fill 0.4s;
-        //    }
-        //    &:hover {
-        //      path {
-        //        transition: fill 0.4s;
-        //        &:first-child {
-        //          fill: rgb(0, 119, 255);
-        //        }
-        //        &:last-child {
-        //          fill: white;
-        //        }
-        //      }
-        //    }
-        //  }
-        //}
+        svg {
+          g {
+            path {
+              transition: fill 0.4s;
+            }
+          }
+        }
+        &:hover {
+          svg {
+            g {
+              path {
+                &:first-child {
+                  fill: rgb(0, 119, 255);
+                }
+
+                &:last-child {
+                  fill: white;
+                }
+              }
+
+            }
+          }
+        }
       }
 
       div {

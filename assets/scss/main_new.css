@@ -838,7 +838,7 @@ h2 {
   margin-right: auto;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1480px) {
   .info {
     left: -137px;
   }
@@ -1992,6 +1992,24 @@ h2 {
   .coursesBlock__cards-container {
     flex-direction: column;
     grid-row-gap: 30px;
+    align-items: center;
+  }
+  .coursesBlock__card {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .coursesBlock__card {
+    max-width: 400px;
+  }
+  .coursesBlock__card h2 {
+    padding-right: 0;
+  }
+  .coursesBlock__card .card__teachers {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
   }
 }
 
@@ -2093,6 +2111,15 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.feedbacksBlock__top .vk-block .vk-btn svg g path {
+  transition: fill 0.4s;
+}
+.feedbacksBlock__top .vk-block .vk-btn:hover svg g path:first-child {
+  fill: #0077ff;
+}
+.feedbacksBlock__top .vk-block .vk-btn:hover svg g path:last-child {
+  fill: white;
 }
 .feedbacksBlock__top .vk-block div {
   margin-left: 18px;

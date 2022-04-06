@@ -78,6 +78,28 @@
     &__cards-container {
       flex-direction: column;
       grid-row-gap: 30px;
+      align-items: center;
+    }
+
+    &__card {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    &__card {
+      max-width: 400px;
+
+      h2 {
+        padding-right: 0;
+      }
+
+      .card__teachers {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+      }
     }
   }
 }
