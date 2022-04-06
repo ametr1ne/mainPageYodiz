@@ -179,14 +179,14 @@
 
     <!-- feedbacksBlock(start) -->
 
-    <div class="feedbacksBlock">
+    <div id="feeds" class="feedbacksBlock">
         <div class="thin-container">
             <h2>Отзывы выпускников нашей школы</h2>
             <div class="feedbacksBlock__top">
                 <p class="text-grey">Наши выпускники — наша гордость. Каждый день мы собираем новые отзывы, учитывая
                     ваши пожелания, вместе делаем курс ещё более эффективным</p>
                 <div class="vk-block">
-                    <a class="vk-btn">
+                    <a href="https://vk.com/topic-102687029_39418828" class="vk-btn" target="_blank">
                         <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_446_238)">
                                 <path d="M0.0292969 24C0.0292969 12.6862 0.0292969 7.02944 3.54402 3.51472C7.05873 0 12.7155 0 24.0293 0H26.0293C37.343 0 42.9998 0 46.5146 3.51472C50.0293 7.02944 50.0293 12.6862 50.0293 24V26C50.0293 37.3137 50.0293 42.9705 46.5146 46.4853C42.9998 50 37.343 50 26.0293 50H24.0293C12.7155 50 7.05873 50 3.54402 46.4853C0.0292969 42.9705 0.0292969 37.3137 0.0292969 26V24Z"
@@ -201,11 +201,88 @@
                             </defs>
                         </svg>
                     </a>
-                    <p>Больше отзывов ВКонтакте</p>
+                    <div>
+                        <p>Больше отзывов</p>
+                        <a href="https://vk.com/topic-102687029_39418828" target="_blank">ВКонтакте</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- sliderBlock (start) -->
+    <div class="sliderBlock__review review-slider">
+        <div id="reviewSlider" class="review-slider__content">
+            <div class="review-slider__content-item">
+                <div class="sliderBlock__slide-wrap">
+                    <p class="review-slider__content-text">Удобно, что занятия проходят в вечернее время, а на выполнение ДЗ есть целая неделя</p>
+                    <p class="review-slider__content-name">Ирина Стрелкова</p>
+                    <p class="sliderBlock__txt">Выпускница</p>
+                </div>
+            </div>
+            <div class="review-slider__content-item">
+                <div class="sliderBlock__slide-wrap">
+                    <p class="review-slider__content-text">Выбрал Yodiz School, потому что на курсе мы изучали не только графику, но и моушн-дизайн</p>
+                    <p class="review-slider__content-name">Иван Злобин</p>
+                    <p class="sliderBlock__txt">Выпускник</p>
+                </div>
+            </div>
+            <div class="review-slider__content-item">
+                <div class="sliderBlock__slide-wrap">
+                    <p class="review-slider__content-text">Я пришла с нулевыми знаниями, а теперь ощутимо освоилась и хочу продолжать</p>
+                    <p class="review-slider__content-name">Маша Краснова</p>
+                    <p class="sliderBlock__txt">Выпускница</p>
+                </div>
+            </div>
+            <div class="review-slider__content-item">
+                <div class="sliderBlock__slide-wrap">
+                    <p class="review-slider__content-text">Курс оказался не нудными лекциями, а многогранным взаимодействием с нами</p>
+                    <p class="review-slider__content-name">Евгения Фонарева</p>
+                    <p class="sliderBlock__txt">Выпускница</p>
+                </div>
+            </div>
+            <div class="review-slider__content-item">
+                <div class="sliderBlock__slide-wrap">
+                    <p class="review-slider__content-text">Я бы посоветовала курс тем, кто в кратчайшие сроки хочет освоить профессию</p>
+                    <p class="review-slider__content-name">Маргарита Заббарова</p>
+                    <p class="sliderBlock__txt">Выпускница</p>
+                </div>
+            </div>
+        </div>
+        <div id="reviewSliderThumbs" class="review-slider__control">
+            <div class="review-slider__control-item">
+                <svg viewBox="0 0 36 36" class="progress">
+                    <path class="circle" stroke-width="4" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                </svg>
+                <img src="../assets/img/s1.jpg" alt="pic">
+            </div>
+            <div class="review-slider__control-item">
+                <svg viewBox="0 0 36 36" class="progress">
+                    <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                </svg>
+                <img src="../assets/img/s2.jpg" alt="pic">
+            </div>
+            <div class="review-slider__control-item">
+                <svg viewBox="0 0 36 36" class="progress">
+                    <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                </svg>
+                <img src="../assets/img/s3.jpg" alt="pic">
+            </div>
+            <div class="review-slider__control-item">
+                <svg viewBox="0 0 36 36" class="progress">
+                    <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                </svg>
+                <img src="../assets/img/s4.jpg" alt="pic">
+            </div>
+            <div class="review-slider__control-item">
+                <svg viewBox="0 0 36 36" class="progress">
+                    <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                </svg>
+                <img src="../assets/img/s5.jpg" alt="pic">
+            </div>
+        </div>
+    </div>
+    <!-- sliderBlock (end) -->
 
     <!-- feedbacksBlock(end) -->
 

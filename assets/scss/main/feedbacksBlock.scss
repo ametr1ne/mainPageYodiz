@@ -21,11 +21,43 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        //svg {
+        //  g {
+        //    path {
+        //      transition: fill 0.4s;
+        //    }
+        //    &:hover {
+        //      path {
+        //        transition: fill 0.4s;
+        //        &:first-child {
+        //          fill: rgb(0, 119, 255);
+        //        }
+        //        &:last-child {
+        //          fill: white;
+        //        }
+        //      }
+        //    }
+        //  }
+        //}
+      }
+
+      div {
+        margin-left: 18px;
       }
 
       p {
         font-size: 19px;
-        margin-left: 18px;
+        white-space: nowrap;
+      }
+
+      a {
+        color: black;
+        transition: color 0.4s;
+
+        &:hover {
+          color: #ff0000;
+        }
       }
     }
   }

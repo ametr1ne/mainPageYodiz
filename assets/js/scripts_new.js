@@ -264,14 +264,14 @@ jQuery(function($){
     });
     function fadeInSlide(slick, slide) {
         var elt = slick.$slides.get(slide);
-        var child = elt.querySelector(".block8__slide-wrap");
+        var child = elt.querySelector(".sliderBlock__slide-wrap");
 
         child.classList.add('active');
     }
 
     function fadeOutSlide(slick, slide) {
         var elt = slick.$slides.get(slide);
-        var child = elt.querySelector(".block8__slide-wrap");
+        var child = elt.querySelector(".sliderBlock__slide-wrap");
 
         child.classList.remove('active');
     }

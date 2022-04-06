@@ -1,11 +1,13 @@
 @import 'font-face';
 @import 'layout_new';
+@import 'slick';
 
 @import "main/coursesBlock";
 @import "main/factsBlock";
 @import "main/interactiveBlock";
 @import "main/collaborationBlock";
 @import "main/feedbacksBlock";
+@import "main/sliderBlock";
 
 .thin-container {
   width: 100%;
