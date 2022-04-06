@@ -6,9 +6,6 @@
 @import "main/interactiveBlock";
 @import "main/collaborationBlock";
 @import "main/feedbacksBlock";
-//@import 'main/block13';
-@import 'main/block14';
-@import 'main/block16';
 
 .thin-container {
   width: 100%;
@@ -61,5 +58,18 @@ p {
 
   &:hover {
     background: #ff0000;
+  }
+}
+
+.footer__address {
+  p {
+    font-size: 19px;
+    line-height: 130%;
+  }
+
+  @media (max-width: 767px) {
+    p {
+      font-size: 16px;
+    }
   }
 }
