@@ -17,11 +17,12 @@
     .img-container {
       margin: 0 auto;
       height: 453px;
-      width: 500px;
+      max-width: 500px;
       display: flex;
       align-items: center;
 
       img {
+        width: 100%;
         display: block;
         margin: auto;
       }
@@ -49,5 +50,49 @@
 
   .test-card {
     border: 1px solid #D7D7E7;
+  }
+  
+  @media (max-width: 767px) {
+    margin-top: 71px;
+    margin-bottom: 57px;
+
+    .interactive-item {
+      width: 100%;
+      padding: 30px 10px 20px;
+      display: flex;
+      flex-direction: column;
+
+      .item-category {
+        display: none;
+      }
+
+      h3 {
+        order: 1;
+        font-size: 19px;
+        margin-left: 24px;
+      }
+      .img-container {
+        order: 2;
+        height: min-content;
+        margin-top: 14px;
+        margin-left: 13px;
+        margin-right: 13px;
+      }
+      .interactive-btn {
+        margin-top: 20px;
+        order: 3;
+      }
+    }
+
+    .test-card {
+      .img-container {
+        margin-top: 38px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .interactive-btn {
+        margin-top: 60px;
+      }
+    }
   }
 }

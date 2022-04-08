@@ -32,8 +32,8 @@
 }
 .review-slider__control-item {
   display: block !important;
-  width: 104px !important;
-  height: 104px;
+  width: 88px !important;
+  height: 88px;
   padding: 5px;
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0);
@@ -87,7 +87,7 @@
   display: block;
   margin-bottom: 19px;
   font-size: 30px;
-  line-height: 40px;
+  line-height: 130%;
   letter-spacing: -.03em;
 }
 .slick-slide {
@@ -186,6 +186,12 @@
 .review-slider__content-name {
   font-family: 'Proxima Nova Sb', sans-serif;
   font-weight: 600;
+  font-size: 19px;
+  line-height: 130%;
+}
+.sliderBlock__txt {
+  font-size: 19px;
+  line-height: 130%;
 }
 @media (max-width: 1440px) {
   .review-slider__content {
@@ -193,7 +199,7 @@
   }
   .review-slider__content-text {
     font-size: 25px;
-    line-height: 35px;
+    line-height: 130%;
   }
   .review-slider__control {
     margin: 6px auto 0 auto;
@@ -205,16 +211,30 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .review-slider__control {
+    max-width: 355px;
+  }
   .review-slider__control-item {
+    height: 57px;
+    width: 57px !important;
     margin: 0 5px;
   }
   .review-slider__content-item {
     width: 290px;
   }
   .review-slider__content {
+    margin-top: 22px;
     width: 100%;
   }
+  .review-slider__content-text {
+    font-size: 19px;
+    margin-bottom: 16px;
+  }
+  .review-slider__content-name, .sliderBlock__txt {
+    font-size: 16px;
+    line-height: 130%;
+  }
   .sliderBlock__slide-wrap {
-    padding: 15px 25px;
+    padding: 21px 25px;
   }
 }

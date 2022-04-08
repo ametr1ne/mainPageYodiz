@@ -15,4 +15,30 @@
       height: 170px;
     }
   }
+
+  @media (max-width: 767px) {
+    margin-bottom: 63px;
+    .companies {
+      margin-top: 22px;
+      margin-bottom: 20px;
+      grid-column-gap: 10px;
+      &__item {
+        height: 62px;
+        width: 50%;
+        &:last-child {
+          display: none;
+        }
+        &:first-child {
+          svg {
+            width: 41px;
+          }
+        }
+        &:nth-child(2) {
+          svg {
+            width: 53px;
+          }
+        }
+      }
+    }
+  }
 }
