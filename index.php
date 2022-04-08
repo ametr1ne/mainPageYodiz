@@ -22,7 +22,7 @@
     <meta property="og:url" content="https://yodizschool.ru">
     <!-- Finish "Open graph" meta tags -->
     <!--		<link href="assets/css/main.min.css" rel="stylesheet" type="text/css">-->
-    <link href="assets/scss/main_new.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/main_new.min.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg">
 </head>
 
@@ -88,7 +88,9 @@
                         <div class="card__info">
                             <div class="info__item">
                                 <p class="text-grey">Когда старт?</p>
-                                <p>5 февраля, 19:00 мск</p>
+                                <?php $arr = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+                    $month = date('n') - 1; ?>
+                                <p><?= date("j $arr[$month]", strtotime("+3 days")) ?>, 19:00 мск</p>
                             </div>
                             <div class="info__item">
                                 <p class="text-grey">Сколько стоит?</p>
@@ -118,7 +120,7 @@
                         <div class="card__info">
                             <div class="info__item">
                                 <p class="text-grey">Когда старт?</p>
-                                <p>16 февраля, 19:00 мск</p>
+                                <p>Идет набор</p>
                             </div>
                             <div class="info__item">
                                 <p class="text-grey">Сколько стоит?</p>
