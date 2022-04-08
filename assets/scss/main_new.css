@@ -1984,6 +1984,9 @@ h2 {
   flex-direction: column;
   grid-row-gap: 36px;
 }
+.coursesBlock__card .card__info .info__item p:not(:last-child) {
+  margin-bottom: 5px;
+}
 .coursesBlock__card .details-btn {
   margin-top: 3.125rem;
   position: relative;
@@ -2019,7 +2022,7 @@ h2 {
     padding-bottom: 57px;
   }
   .coursesBlock .thin-container h1 {
-    margin-bottom: 9px;
+    margin-bottom: 20px;
   }
   .coursesBlock .thin-container p {
     color: #9090A9;
@@ -2044,6 +2047,9 @@ h2 {
   .coursesBlock__card .card__info {
     grid-row-gap: 23px;
   }
+  .coursesBlock__card .card__info .info__item p:not(:last-child) {
+    margin-bottom: 0;
+  }
   .coursesBlock__card .card__teachers {
     display: none;
   }
@@ -2054,7 +2060,8 @@ h2 {
 }
 
 .factsBlock img {
-  margin: 50px 0;
+  margin: 50px 0 45px;
+  float: left;
   width: 100%;
 }
 .factsBlock__item:not(:last-child) {
@@ -2212,14 +2219,16 @@ h2 {
 }
 .feedbacksBlock__top {
   display: flex;
-  margin-top: 34px;
+  margin-top: 19px;
   align-items: flex-start;
+}
+.feedbacksBlock__top .feedback-subtitle {
+  margin-top: 15px;
 }
 .feedbacksBlock__top .vk-block {
   margin-left: 40px;
   display: flex;
   align-items: center;
-  margin-top: -15px;
 }
 .feedbacksBlock__top .vk-block .vk-btn {
   background: black;
@@ -2526,7 +2535,6 @@ h2 {
   max-width: 870px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
 }
 
 .hide-container {
@@ -2534,7 +2542,20 @@ h2 {
   max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
+}
+
+h2 {
+  font: 600 50px/107% "Proxima Nova Sb", sans-serif;
+}
+@media (max-width: 1440px) {
+  h2 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: 34px;
+  }
 }
 
 .btn {
@@ -2595,6 +2616,11 @@ p {
     max-width: 870px;
   }
 }
+@media (max-width: 910px) {
+  .thin-container, .hide-container {
+    padding: 0 15px;
+  }
+}
 @media (max-width: 850px) {
   .cards-container {
     grid-row-gap: 20px;
@@ -2606,6 +2632,10 @@ p {
   }
 }
 @media (max-width: 767px) {
+  h1 {
+    font-size: 45px;
+  }
+
   .thin-container {
     max-width: 400px;
   }

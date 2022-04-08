@@ -3,14 +3,17 @@
 
   &__top {
     display: flex;
-    margin-top: 34px;
+    margin-top: 19px;
     align-items: flex-start;
+
+    .feedback-subtitle {
+      margin-top: 15px;
+    }
 
     .vk-block {
       margin-left: 40px;
       display: flex;
       align-items: center;
-      margin-top: -15px;
 
       .vk-btn {
         background: black;
