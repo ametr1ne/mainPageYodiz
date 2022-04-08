@@ -2218,7 +2218,7 @@ h2 {
   margin-top: 101px;
 }
 .feedbacksBlock h2 {
-  max-width: 630px;
+  max-width: 568px;
 }
 .feedbacksBlock__top {
   display: flex;
@@ -2269,6 +2269,9 @@ h2 {
 @media (max-width: 767px) {
   .feedbacksBlock {
     margin-top: 51px;
+  }
+  .feedbacksBlock h2 {
+    max-width: 290px;
   }
   .feedbacksBlock__top {
     display: none;
