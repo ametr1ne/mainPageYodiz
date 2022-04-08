@@ -118,6 +118,15 @@ p {
 }
 
 @media (max-width: 767px) {
+  header {
+    padding-top: 12px;
+  }
+  .header__logo {
+    svg {
+      height: 35px;
+      width: 46px;
+    }
+  }
   h1 {
     font-size: 45px;
   }

@@ -1,6 +1,10 @@
 .feedbacksBlock {
   margin-top: 101px;
 
+  h2 {
+    max-width: 630px;
+  }
+
   &__top {
     display: flex;
     margin-top: 19px;
