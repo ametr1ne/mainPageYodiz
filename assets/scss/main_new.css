@@ -2153,6 +2153,7 @@ h2 {
   }
   .interactiveBlock .interactive-item .interactive-btn {
     margin-top: 20px;
+    justify-content: center;
     order: 3;
   }
   .interactiveBlock .test-card .img-container {
