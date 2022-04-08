@@ -2643,6 +2643,10 @@ p {
     padding-top: 12px;
   }
 
+  .header__btn {
+    top: 12px;
+  }
+
   .header__logo svg {
     height: 35px;
     width: 46px;
